@@ -23,7 +23,7 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #000000;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -34,7 +34,7 @@ nav a:hover {
 
   /* Main content */
 main {
-    background: rgb(255, 255, 255);
+    background: #e1e2f7;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
