@@ -1,69 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-
-section.vh-100 {
-    background-color: #eaf3ff; 
-}
-
-.custom-card {
-    background-color: #1b1359;
-}
-
-
-/*
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f1f5ff; 
+/* Reset some default browser styling */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.form-box {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  /* Body styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
 }
 
-#login button:focus {
-    box-shadow: none;
+  /* Navigation */
+nav {
+    background: #333;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
 }
 
-.accordion-button:not(.collapsed) {
-    background-color: #fff;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
 }
 
-.form-label {
-    color: #3e4455;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.form-control {
-    background-color: #fff;
-    padding: 0 30px;
-    border-color: #939393;
-    line-height: 45px;
-    border-radius: 0;
+  /* Main content */
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.form-control:focus {
-    outline: none;
-    box-shadow: none;
-    background-color: #fff;
-    color: #3e4455;
-    border-color: #939393;
+  /* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
 }
-
-.form-check-input {
-    border-color: #939393;
-}
-
-.btn {
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    color: #fff;
-    font-weight: 600;
-    border-radius: 0;
-    background-color: #6f63f4;
-}
-*/
