@@ -1,49 +1,66 @@
 /* Reset some default browser styling */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  /* Body styling */
+/* Body styling */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1.6;
-    background-color: #16153e;
-    color: #333;
-    padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  background-color: #16153e;
+  color: #333;
+  padding: 20px;
 }
 
-  /* Navigation */
+/* Navigation */
 nav {
-    background: #e1e2f7;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e1e2f7;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
 }
 
-nav a {
-    color: #000000;
-    text-decoration: none;
-    margin: 0 10px;
+.nav-left a {
+  color: #000000;
+  text-decoration: none;
+  margin: 0 10px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+.nav-left a:hover {
+  text-decoration: underline;
 }
 
-  /* Main content */
+.nav-right a {
+  background-color: #d9534f; /* red button */
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-right a:hover {
+  background-color: #c9302c; /* darker red on hover */
+}
+
+/* Main content */
 main {
-    background: #e1e2f7;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #e1e2f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-  /* Footer */
+/* Footer */
 footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #666;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
 }
