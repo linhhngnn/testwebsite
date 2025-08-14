@@ -81,6 +81,7 @@ footer {
   color: white; /* White text color */
 }
 
-.html { width: 90%; background-color: #04AA6D; }
-.css { width: 80%; background-color: #2196F3; }
-.python { width: 65%; background-color: #f44336; }
+.python { width: 90%; background-color: #f44336; }
+.css { width: 50%; background-color: #2196F3; }
+.html { width: 65%; background-color: #04AA6D; }
+
