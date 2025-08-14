@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #e1e2f7;
+  /*background: #e1e2f7;*/
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
@@ -35,7 +35,7 @@ nav {
   text-decoration: underline;
 }
 
-.nav-right a {
+/*.nav-right a {
   background-color: #d9534f; 
   color: white;
   padding: 6px 12px;
@@ -46,23 +46,23 @@ nav {
 }
 
 .nav-right a:hover {
-  background-color: #c9302c; /* darker red on hover */
-}
+  background-color: #c9302c;  darker red on hover 
+}*/
 
-/* Main content */
+/* Main content 
 main {
   background: #e1e2f7;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 /* Footer */
 footer {
   text-align: center;
   margin-top: 20px;
   font-size: 0.9em;
-  color: #666;
+  color: #858585;
 }
 
 /* Make sure that padding behaves as expected */
