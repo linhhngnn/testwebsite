@@ -6,7 +6,6 @@
     <title>About — Linh's Website</title>
 
     <!-- Tailwind -->
-    <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Flowbite (for the language dropdown) -->
@@ -15,8 +14,11 @@
 
     <!-- Font Awesome (brand icons) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+    <!-- style sheet-->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-white">
+<body>
 
 <!-- Navbar -->
     <nav class="bg-white border-gray-200 dark:bg-gray-900">
@@ -86,34 +88,28 @@
     <section class="max-w-screen-xl mx-auto mt-6 bg-white shadow-lg rounded-lg p-8">
         <h3 class="text-2xl font-semibold mb-6 text-center">My Skills</h3>
 
-        <!-- Skill row -->
         <div class="mb-4">
-        <div class="flex justify-between mb-1">
-            <span>Python</span><span>90%</span>
-        </div>
-        <div class="w-full h-3 bg-gray-200 rounded">
-            <div class="h-3 bg-red-500 rounded" style="width:90%"></div>
-        </div>
+            <p>Python</p>
+            <div class="container">
+                <div class="skills python">90%</div>
+            </div>
         </div>
 
         <div class="mb-4">
-        <div class="flex justify-between mb-1">
-            <span>CSS</span><span>50%</span>
-        </div>
-        <div class="w-full h-3 bg-gray-200 rounded">
-            <div class="h-3 bg-blue-500 rounded" style="width:50%"></div>
-        </div>
+            <p>CSS</p>
+            <div class="container">
+                <div class="skills css">50%</div>
+            </div>
         </div>
 
         <div>
-        <div class="flex justify-between mb-1">
-            <span>HTML</span><span>65%</span>
-        </div>
-        <div class="w-full h-3 bg-gray-200 rounded">
-            <div class="h-3 bg-green-500 rounded" style="width:65%"></div>
-        </div>
+            <p>HTML</p>
+            <div class="container">
+                <div class="skills html">65%</div>
+            </div>
         </div>
     </section>
+
 
     <!-- Footer -->
     <footer class="text-center mt-6 p-4 text-gray-600">
