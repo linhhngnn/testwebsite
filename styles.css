@@ -109,7 +109,7 @@ footer {
   position: absolute;
   top: 15px;
   left: 50%;
-  transform: translateX(-50%);
+  /*transform: translateX(-50%);*/
   width: 25px;
   height: 25px;
   background-color: white;
