@@ -119,6 +119,7 @@ footer {
   position: relative;
   z-index: 2;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  color: black;
 }
 
 /* Arrows for Left Boxes */
