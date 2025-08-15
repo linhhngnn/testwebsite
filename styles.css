@@ -84,15 +84,18 @@ footer {
 }
 
 /* vertical line */
-.timeline::after {
+.timeline-item::after {
   content: '';
   position: absolute;
-  width: 6px;
+  top: 15px; /* adjust to vertically center on line */
+  left: 50%; /* center on the vertical line */
+  transform: translate(-50%, 0); /* shift perfectly */
+  width: 25px;
+  height: 25px;
   background-color: white;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  border: 4px solid #000547;
+  border-radius: 50%;
+  z-index: 1;
 }
 
 /* timeline items */
