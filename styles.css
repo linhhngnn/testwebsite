@@ -77,50 +77,102 @@ footer {
 }
 
 /* The actual timeline (the vertical ruler) */
+/* ===== Timeline Container ===== */
 .timeline {
   position: relative;
-  width: 100%;
   max-width: 900px;
-  margin: auto;
+  margin: 50px auto;
   padding: 20px 0;
 }
 
-.timeline::before {
+/* Middle Vertical Line */
+.timeline::after {
   content: '';
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%; /* center line */
   width: 4px;
   background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
   transform: translateX(-50%);
-  z-index: 0; /* make sure it's behind content */
+  z-index: 1;
 }
 
+/* Timeline Item Box */
 .timeline-item {
+  padding: 20px 30px;
   position: relative;
+  background-color: inherit;
   width: 50%;
-  padding: 20px;
+  box-sizing: border-box;
 }
 
+/* Left-aligned Items */
 .timeline-item.left {
   left: 0;
 }
 
+/* Right-aligned Items */
 .timeline-item.right {
   left: 50%;
 }
 
+/* White Box Styling */
+.timeline-item .content {
+  padding: 20px;
+  background-color: white;
+  position: relative;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+/* Circle on the Line */
 .timeline-item::after {
   content: '';
   position: absolute;
-  top: 30px; /* adjust to center vertically with box */
-  left: 50%; /* align with vertical line */
-  transform: translate(-50%, 0);
+  top: 30px; /* adjust this to match box height */
+  left: 50%;
+  transform: translateX(-50%);
   width: 20px;
   height: 20px;
   background-color: white;
-  border: 4px solid #000547;
+  border: 4px solid #000547; /* dark border for contrast */
   border-radius: 50%;
-  z-index: 1;
+  z-index: 3;
+}
+
+/* Text Alignment */
+.timeline-item.left .content {
+  text-align: right;
+}
+
+.timeline-item.right .content {
+  text-align: left;
+}
+
+/* Responsive View (Mobile) */
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.right {
+    left: 0%;
+  }
+
+  .timeline-item::after {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item.left .content,
+  .timeline-item.right .content {
+    text-align: left;
+  }
 }
