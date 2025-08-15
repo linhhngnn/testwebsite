@@ -144,7 +144,7 @@ footer {
   border-color: transparent white transparent transparent;
 }
 
-/* Circles on the Line */
+/* Circles on the Line
 .timeline-item::before {
   content: '';
   position: absolute;
@@ -156,7 +156,8 @@ footer {
   top: 15px;
   border-radius: 50%;
   z-index: 1;
-}
+} */
+
 
 /* Responsive */
 @media screen and (max-width: 600px) {
