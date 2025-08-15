@@ -67,9 +67,9 @@ footer {
   color: white;
 }
 
-.python { width: 90%; background-color: #f44336; }
-.css    { width: 50%; background-color: #2196F3; }
-.html   { width: 65%; background-color: #04AA6D; }
+.python { width: 90%; background-color: #9bcaf7; }
+.css    { width: 50%; background-color: #9bcaf7; }
+.html   { width: 65%; background-color: #9bcaf7; }
 
 /* timeline */
 * {
@@ -92,7 +92,7 @@ footer {
   top: 0;
   bottom: 0;
   left: 50%;
-  margin-left: -3px;
+  transform: translateX(-50%);
 }
 
 /* timeline items */
@@ -106,11 +106,13 @@ footer {
 .timeline-item::after {
   content: '';
   position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 25px;
   height: 25px;
   background-color: white;
   border: 4px solid #000547;
-  top: 15px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -123,31 +125,25 @@ footer {
   left: 50%;
 }
 
-/* arrows for left items */
+/* arrows */
 .timeline-item.left::before {
   content: '';
   position: absolute;
   top: 22px;
-  right: 30px;
+  right: -15px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
 }
 
-/* arrows for right items */
 .timeline-item.right::before {
   content: '';
   position: absolute;
   top: 22px;
-  left: 30px;
+  left: -15px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
-}
-
-/* fix dot position for right items */
-.timeline-item.right::after {
-  left: -16px;
 }
 
 /* box styling */
@@ -155,4 +151,5 @@ footer {
   padding: 20px 30px;
   background-color: white;
   border-radius: 6px;
+  color: black; 
 }
