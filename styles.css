@@ -72,85 +72,116 @@ footer {
 .html   { width: 65%; background-color: #9bcaf7; }
 
 /* timeline */
-* {
-  box-sizing: border-box;
-}
-
-/* The actual timeline (the vertical ruler) */
 /* ===== Timeline Container ===== */
 .timeline {
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 40px 0;
 }
 
-/* vertical line */
+/* Middle Vertical Line */
 .timeline::after {
   content: '';
   position: absolute;
-  width: 6px;
+  width: 4px;
   background-color: white;
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-}
-
-/* timeline items */
-.timeline-item {
-  padding: 10px 40px;
-  position: relative;
-  width: 50%;
-}
-
-/* dots */
-.timeline-item::after {
-  content: '';
-  position: absolute;
-  top: 15px;
-  left: 50%;
-  /*transform: translateX(-50%);*/
-  width: 25px;
-  height: 25px;
-  background-color: white;
-  border: 4px solid #000547;
-  border-radius: 50%;
   z-index: 1;
 }
 
+/* Timeline Items */
+.timeline-item {
+  padding: 20px 40px;
+  position: relative;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+/* Left Items */
 .timeline-item.left {
   left: 0;
 }
 
+/* Right Items */
 .timeline-item.right {
   left: 50%;
 }
 
-/* arrows */
-.timeline-item.left::before {
+/* Content Box */
+.timeline-item .content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* Arrows for Left Boxes */
+.timeline-item.left .content::after {
   content: '';
   position: absolute;
-  top: 22px;
+  top: 20px;
   right: -15px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
+  border-width: 10px 0 10px 15px;
+  border-style: solid;
   border-color: transparent transparent transparent white;
 }
 
-.timeline-item.right::before {
+/* Arrows for Right Boxes */
+.timeline-item.right .content::after {
   content: '';
   position: absolute;
-  top: 22px;
+  top: 20px;
   left: -15px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
+  border-width: 10px 15px 10px 0;
+  border-style: solid;
   border-color: transparent white transparent transparent;
 }
 
-/* box styling */
-.content {
-  padding: 20px 30px;
+/* Circles on the Line */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
   background-color: white;
-  border-radius: 6px;
-  color: black; 
+  border: 3px solid orange;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 25px;
+  }
+
+  .timeline-item.right {
+    left: 0%;
+  }
+
+  .timeline-item::before {
+    left: 20px;
+    transform: none;
+  }
+
+  .timeline-item.left .content::after,
+  .timeline-item.right .content::after {
+    left: 30px;
+    border: none;
+  }
 }
